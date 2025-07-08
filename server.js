@@ -73,8 +73,8 @@ let saveTimeout = null;
 const corsOptions = {
     origin: process.env.NODE_ENV === 'production'
         ? [
-            process.env.CLIENT_URL || 'https://juegomemoriacliente3-yk6i.onrender.com',
-            'https://juegomemoriacliente3-yk6i.onrender.com' // Sin la barra al final
+            process.env.CLIENT_URL || 'https://juegoclientedemo.onrender.com',
+            'https://juegoclientedemo.onrender.com' // Sin la barra al final
         ]
         : ['http://localhost:3000'],
     methods: ['GET', 'POST'],
@@ -3147,7 +3147,7 @@ app.get('/game-state-summary', (req, res) => {
 
 // Logs de inicio
 console.log('Entorno:', process.env.NODE_ENV);
-console.log('URL del cliente:', process.env.CLIENT_URL || 'https://juegomemoriacliente3-yk6i.onrender.com');
+console.log('URL del cliente:', process.env.CLIENT_URL || 'https://juegoclientedemo.onrender.com');
 console.log('Firebase:', db ? 'Configurado' : 'No configurado');
 console.log('Base de datos Firebase:', 'https://juegomemoriademo-default-rtdb.firebaseio.com/');
 
